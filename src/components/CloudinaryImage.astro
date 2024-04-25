@@ -2,6 +2,8 @@
 import { Cloudinary } from "@cloudinary/url-gen";
 import { Image } from "astro:assets";
 
+const { className, publicId } = Astro.props;
+
 // Create and configure your Cloudinary instance.
 const cld = new Cloudinary({
   cloud: {
@@ -10,12 +12,10 @@ const cld = new Cloudinary({
 });
 
 // Use the image with public ID, 'pond_reflect'.
-const myImage = cld.image("victorian-spas/Victorian-Bali-Spa-Facial_dgafqo");
+const myImage = cld.image("victorian-spas/" + publicId);
 
 // Request automatic format and quality.
 myImage.format("auto").quality("auto");
-
-const { className } = Astro.props;
 ---
 
 <Image

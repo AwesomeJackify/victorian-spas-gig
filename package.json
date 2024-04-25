@@ -24,6 +24,7 @@
     "@types/react-dom": "^18.2.25",
     "astro": "^4.6.3",
     "astro-icon": "^1.1.0",
+    "cloudinary": "^2.2.0",
     "gsap": "^3.12.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
