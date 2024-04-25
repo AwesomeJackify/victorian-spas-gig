@@ -34,7 +34,12 @@ import config from "@data/config.json";
     {
       config.socials.map((social: any) => (
         <li>
-          <a href={social.url} target="_blank" aria-label={social.label}>
+          <a
+            href={social.url}
+            aria-label={social.name}
+            target="_blank"
+            aria-label={social.label}
+          >
             <Icon name={social.icon} class="text-2xl" />
           </a>
         </li>
