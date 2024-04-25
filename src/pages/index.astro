@@ -1,5 +1,253 @@
 ---
+import { getImage, Image } from "astro:assets";
+
+import CloudinaryImage from "@components/CloudinaryImage.astro";
+
 import Layout from "../layouts/Layout.astro";
+import heroImg from "@assets/images/heroBG.jpeg";
+
+import massageImg from "@assets/images/massage.webp";
+import facialImg from "@assets/images/facial.jpeg";
+import oilImg from "@assets/images/oil.jpeg";
+
+import servicesBGImg from "@assets/images/servicesBG.jpeg";
+
+import loliImg from "@assets/images/loli.webp";
+
+import location1 from "@assets/images/location1.png";
+import location2 from "@assets/images/location2.png";
+
+import config from "@data/config.json";
+
+import { Icon } from "astro-icon/components";
+
+const optimisedBackgroundImage = await getImage({ src: servicesBGImg });
 ---
 
-<Layout title="Welcome to Astro."> hi </Layout>
+<Layout title={config.businessName}>
+  <section class="h-[calc(100dvh)] w-full overflow-hidden relative">
+    <div
+      class="absolute top-1/2 left-1/2 flex flex-col justify-center gap-16 -translate-x-1/2 -translate-y-1/2 z-10 w-full max-w-2xl mx-auto px-2 items-center"
+    >
+      <h1 class="text-white text-8xl text-center">
+        Unwind with ease at our spa. Pure bliss awaits.
+      </h1>
+      <div class="flex flex-col gap-4 items-center font-sans md:hidden">
+        <a href={config.bookingLink} target="_blank" class="btn w-fit">
+          Book Now
+        </a>
+        <a
+          href={config.giftLink}
+          target="_blank"
+          class="btn w-fit btn-secondary"
+        >
+          Buy a Gift Voucher
+        </a>
+      </div>
+    </div>
+
+    <Image
+      src={heroImg}
+      id="heroBG"
+      loading={"eager"}
+      alt="hero bg"
+      class="max-w-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(300dvh)] max-md:w-[calc(200dvh)] blur-sm h-full object-cover scale-105"
+    />
+  </section>
+  <section
+    class="p-20 max-md:px-2 flex flex-col gap-16 max-md:gap-8 max-w-screen-xl mx-auto"
+  >
+    <h1 class="text-4xl max-md:text-center max-w-4xl">
+      Welcome to Victorian Bali Spa - a hidden gem located in the heart of
+      Auckland's CBD and Ponsonby.
+    </h1>
+    <div
+      class="grid grid-cols-2 w-full place-items-end gap-16 max-md:grid-cols-1 max-md:gap-8"
+    >
+      <div class="flex flex-col items-center gap-4">
+        <Image src={location1} alt="location 1" class="w-full rounded-2xl" />
+        <h1 class="italic text-lg">Victoria Park branch</h1>
+      </div>
+      <div class="flex flex-col items-center gap-4">
+        <Image src={location2} alt="location 2" class="w-full rounded-2xl" />
+        <h1 class="italic text-lg">Ponsonby branch</h1>
+      </div>
+    </div>
+
+    <h1 class="text-2xl max-md:text-xl text-center mx-auto" id="introText">
+      Whether you're seeking a deep, therapeutic massage
+      <Image
+        src={massageImg}
+        class="introImg w-32 max-md:w-16 aspect-video object-cover rounded-full inline-block mx-4"
+        alt="massage"
+      />
+      a luxurious facial
+      <Image
+        src={facialImg}
+        class="introImg w-32 max-md:w-16 aspect-video object-cover rounded-full inline-block mx-4"
+        alt="massage"
+      />
+      or a traditional Balinese oil massage for two,
+      <Image
+        src={oilImg}
+        class="introImg w-32 max-md:w-16 aspect-video object-cover rounded-full inline-block mx-4"
+        alt="massage"
+      />
+      we can help. At Victorian Bali Spa, we're committed to making your visit unforgettable
+      with our exclusive services.
+    </h1>
+  </section>
+  <section class="max-w-screen-xl mx-auto">
+    <div
+      class="grid grid-cols-2 max-md:grid-cols-1 place-items-end gap-16 items-start mx-auto bg-primary py-8 rounded-t-3xl w-fit px-16 max-md:p-8 max-md:gap-8"
+    >
+      <Image src={loliImg} alt="loli" class="w-96 rounded-3xl" />
+      <div
+        class="flex flex-col gap-8 max-md:gap-4 place-self-start items-center"
+      >
+        <h1 class="text-6xl">Meet Loli</h1>
+        <p class="max-w-sm">
+          Loli brings over 25 years of massage therapy expertise to Victorian
+          Bali Spa, having trained in Bali and refined her skills in prestigious
+          hotel spas. <br /><br />Now in New Zealand, she opened Victorian Bali
+          Spa in February 2023, specializing in traditional Balinese massage to
+          alleviate tension and promote relaxation. Loli is passionate about her
+          craft, saying, "Seeing people leave with a smile is magic for me."
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    id="services"
+    class="flex max-md:gap-16 flex-col items-center py-16 max-md:py-8 w-full relative h-[1000px] overflow-hidden max-md:h-auto"
+  >
+    <Image
+      src={servicesBGImg}
+      alt="services bg image"
+      class="absolute top-0 left-0 w-full h-full object-cover -z-10 blur-[8px] scale-110"
+    />
+    <h1 class="text-white text-8xl mt-20 text-center w-full">Our Services</h1>
+    <svg
+      viewBox="0 0 200 100"
+      class="absolute max-md:hidden top-20 left-1/2 z-20 -translate-x-1/2 h-full max-w-none w-[200%] max-md:w-[400%]"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        id="path"
+        d="M 10 75 Q 100 10 190 75"
+        fill="transparent"
+        stroke="#f5f5f5"
+        stroke-width="0.2"></path>
+    </svg>
+    <div
+      class="max-md:grid grid-cols-2 w-full max-md:gap-4 max-md:px-2 md:absolute z-20"
+    >
+      {
+        config.services.slice(0, 6).map((service: any) => (
+          <div class="w-60 service font-sans relative group text-center max-md:w-full">
+            <a
+              class="flex flex-col md:group-hover:scale-125 transition bg-primary h-full rounded-2xl gap-4 p-4 cursor-pointer"
+              href={`/services/${service.name}`}
+            >
+              <CloudinaryImage className="w-full" />
+              <hr />
+              <div class="flex flex-col gap-2">
+                <h1 class="text-xs font-bold">{service.name}</h1>
+                <p class="text-xs">{service.pricing}</p>
+              </div>
+            </a>
+          </div>
+        ))
+      }
+    </div>
+    <a
+      href="/services"
+      class="text-2xl link mt-auto z-20 link-primary transition"
+    >
+      View all our services
+    </a>
+  </section>
+
+  <section class="max-w-screen-lg mx-auto py-16 flex flex-col gap-16 px-2">
+    <div class="text-8xl inline-block">
+      <Icon name="meteocons:star-fill" />
+      <h1>Here's what our customers have said</h1>
+    </div>
+    <div class="grid grid-cols-3 place-items-center gap-8 max-md:grid-cols-1">
+      {
+        config.reviews.map((review) => (
+          <div class="flex flex-col gap-8 items-center h-full justify-between font-sans bg-primary rounded-2xl py-8 px-4">
+            <p class="text-center italic font-extralight">"{review.review}"</p>
+            <h1 class="text-xl font-serif">-{review.name}</h1>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <script>
+    import { gsap } from "gsap";
+    import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+    import Lenis from "@studio-freight/lenis";
+
+    gsap.registerPlugin(MotionPathPlugin);
+    gsap.registerPlugin(ScrollTrigger);
+
+    const lenis = new Lenis();
+
+    lenis.on("scroll", (e: any) => {});
+
+    lenis.on("scroll", ScrollTrigger.update);
+
+    gsap.ticker.add((time) => {
+      lenis.raf(time * 1000);
+    });
+
+    gsap.ticker.lagSmoothing(0);
+
+    const heroTimeline = gsap.timeline();
+    heroTimeline.from("#heroBG", {
+      height: 0,
+      opacity: 0,
+      duration: 1,
+      ease: "power1.inOut",
+    });
+
+    const introTimeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#introText",
+        start: "top center",
+        end: "bottom center",
+      },
+    });
+
+    introTimeline.from(".introImg", {
+      y: 100,
+      opacity: 0,
+      stagger: 0.1,
+    });
+
+    let mm = gsap.matchMedia();
+    mm.add("(min-width: 768px)", () => {
+      gsap.to(".service", {
+        scrollTrigger: {
+          trigger: "#services",
+          start: "center center",
+          end: "bottom center",
+          pin: true,
+          scrub: true,
+        },
+        motionPath: {
+          path: "#path",
+          align: "#path",
+          autoRotate: true,
+          alignOrigin: [0.5, 0.5],
+        },
+        stagger: 0.3,
+        duration: 2,
+      });
+    });
+  </script>
+</Layout>
