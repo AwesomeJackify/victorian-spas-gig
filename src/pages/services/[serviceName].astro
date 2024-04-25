@@ -1,0 +1,76 @@
+---
+import config from "@data/config.json";
+import CloudinaryImage from "@components/CloudinaryImage.astro";
+
+export function getStaticPaths() {
+  let paths: any = [];
+
+  config.services.forEach((service) => {
+    paths.push({
+      params: {
+        serviceName: service.name,
+      },
+    });
+  });
+
+  return paths;
+}
+
+const { serviceName } = Astro.params;
+
+const serviceData = config.services.find(
+  (service) => service.name === serviceName
+);
+
+if (!serviceData) {
+  return {
+    status: 404,
+  };
+}
+
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout title={serviceName}>
+  <section
+    class="md:mt-32 w-full h-96 max-md:h-auto bg-primary flex flex-col items-center justify-center"
+  >
+    <h1 class="text-9xl py-16 font-extrabold text-center">
+      {serviceData.name}
+    </h1>
+  </section>
+  <section
+    class="grid grid-cols-2 max-md:grid-cols-1 place-items-center max-md:flex-col px-2 items-center mx-auto max-w-screen-lg py-16 gap-8 justify-center"
+  >
+    <div class="flex flex-col gap-8 max-md:order-1">
+      <h1 class="text-4xl">Service Description</h1>
+      <h1 class="text-lg font-medium whitespace-break-spaces">
+        {serviceData.pricing.replaceAll(",", "\n")}
+      </h1>
+      <h2 class="font-sans font-extralight whitespace-pre-line">
+        {serviceData.description}
+      </h2>
+    </div>
+    <CloudinaryImage
+      publicId={serviceData.publicId}
+      className="w-72 max-md:w-52 aspect-square rounded-2xl"
+    />
+  </section>
+  <section class="flex flex-col max-w-screen-lg mx-auto px-2">
+    <div class="divider"></div>
+    <div class="flex flex-col gap-4 max-md:gap-2">
+      <h1 class="text-3xl">Cancellation Policy</h1>
+      <p>24hrs cancellation policy</p>
+    </div>
+    <div class="divider"></div>
+  </section>
+  <section class="flex flex-col items-center mb-8">
+    <a
+      href={config.bookingLink}
+      target="_blank"
+      class="btn btn-wide btn-lg font-sans btn-secondary"
+    >
+      Book Now
+    </a>
+  </section>
+</Layout>
