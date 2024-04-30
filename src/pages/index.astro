@@ -12,7 +12,7 @@ import oilImg from "@assets/images/oil.jpeg";
 
 import servicesBGImg from "@assets/images/servicesBG.jpeg";
 
-import loliImg from "@assets/images/loli.webp";
+import loliImg from "@assets/images/loli.jpeg";
 
 import location1 from "@assets/images/location1.png";
 import location2 from "@assets/images/location2.png";
@@ -103,7 +103,11 @@ const optimisedBackgroundImage = await getImage({ src: servicesBGImg });
     <div
       class="grid grid-cols-2 max-md:grid-cols-1 place-items-end gap-16 items-start mx-auto bg-primary py-8 rounded-3xl w-fit px-16 max-md:p-8 max-md:gap-8"
     >
-      <Image src={loliImg} alt="loli" class="w-96 rounded-3xl" />
+      <Image
+        src={loliImg}
+        alt="loli"
+        class="w-96 aspect-square object-cover rounded-3xl"
+      />
       <div
         class="flex flex-col gap-8 max-md:gap-4 place-self-start items-center"
       >
