@@ -13,6 +13,7 @@ import oilImg from "@assets/images/oil.jpeg";
 import servicesBGImg from "@assets/images/servicesBG.jpeg";
 
 import loliImg from "@assets/images/loli.jpeg";
+import ratnaImg from "@assets/images/ratna.jpeg";
 
 import location1 from "@assets/images/location1.png";
 import location2 from "@assets/images/location2.png";
@@ -21,7 +22,20 @@ import config from "@data/config.json";
 
 import { Icon } from "astro-icon/components";
 
-const optimisedBackgroundImage = await getImage({ src: servicesBGImg });
+const staff = [
+  {
+    name: "Loli",
+    image: loliImg,
+    description:
+      'Loli brings over 25 years of massage therapy expertise to Victorian Bali Spa, having trained in Bali and refined her skills in prestigious hotel spas. \n\nNow in New Zealand, she opened Victorian Bali Spa in February 2023, specializing in traditional Balinese massage to alleviate tension and promote relaxation. Loli is passionate about her craft, saying, "Seeing people leave with a smile is magic for me."',
+  },
+  {
+    name: "Ratna",
+    image: ratnaImg,
+    description:
+      "Ratna brings over 15 years of experience in the spa industry, having honed her skills with renowned brands such as the Oberoi Group of Hotels & Resorts and Alila Goa. She is well-versed in a variety of therapeutic techniques, with a deep understanding of body balance and its impact on overall health and wellness. Ratna is an all-rounder who specialises in both beauty treatments and massage therapy. Her expertise has been recognized continuously over the past few years, earning her the title of Best Therapist in the Auckland region.",
+  },
+];
 ---
 
 <Layout title={config.businessName}>
@@ -99,29 +113,25 @@ const optimisedBackgroundImage = await getImage({ src: servicesBGImg });
       with our exclusive services.
     </h1>
   </section>
-  <section class="max-w-screen-xl mx-auto mb-16 px-2">
-    <div
-      class="grid grid-cols-2 max-md:grid-cols-1 place-items-end gap-16 items-start mx-auto bg-primary py-8 rounded-3xl w-fit px-16 max-md:p-8 max-md:gap-8"
-    >
-      <Image
-        src={loliImg}
-        alt="loli"
-        class="w-96 aspect-square object-cover rounded-3xl"
-      />
-      <div
-        class="flex flex-col gap-8 max-md:gap-4 place-self-start items-center"
-      >
-        <h1 class="text-6xl">Meet Loli</h1>
-        <p class="max-w-sm">
-          Loli brings over 25 years of massage therapy expertise to Victorian
-          Bali Spa, having trained in Bali and refined her skills in prestigious
-          hotel spas. <br /><br />Now in New Zealand, she opened Victorian Bali
-          Spa in February 2023, specializing in traditional Balinese massage to
-          alleviate tension and promote relaxation. Loli is passionate about her
-          craft, saying, "Seeing people leave with a smile is magic for me."
-        </p>
-      </div>
-    </div>
+  <section
+    class="max-w-screen-xl mx-auto p-16 px-2 flex flex-col items-center gap-16"
+  >
+    <h1 class="text-9xl">Say Hi To Our Staff</h1>
+    {
+      staff.map((staff) => (
+        <div class="grid grid-cols-2 max-md:grid-cols-1 place-items-end gap-16 items-start mx-auto bg-primary py-8 rounded-3xl w-fit px-16 max-md:p-8 max-md:gap-8">
+          <Image
+            src={staff.image}
+            alt="loli"
+            class="w-96 aspect-square object-cover rounded-3xl"
+          />
+          <div class="flex flex-col gap-8 max-md:gap-4 place-self-start items-center">
+            <h1 class="text-6xl">{staff.name}</h1>
+            <p class="max-w-sm">{staff.description}</p>
+          </div>
+        </div>
+      ))
+    }
   </section>
   <section
     id="services"
@@ -134,7 +144,7 @@ const optimisedBackgroundImage = await getImage({ src: servicesBGImg });
     />
     <div class="w-full h-full absolute top-0 left-0 bg-black opacity-20 -z-10">
     </div>
-    <h1 class="text-white text-8xl mt-20 text-center w-full">Our Services</h1>
+    <h1 class="text-white text-9xl mt-20 text-center w-full">Our Services</h1>
     <svg
       viewBox="0 0 200 100"
       class="absolute max-md:hidden top-20 left-1/2 z-20 -translate-x-1/2 h-full max-w-none w-[200%] max-md:w-[400%]"
@@ -177,9 +187,9 @@ const optimisedBackgroundImage = await getImage({ src: servicesBGImg });
   </section>
 
   <section class="max-w-screen-lg mx-auto py-16 flex flex-col gap-16 px-2">
-    <div class="text-8xl inline-block">
-      <Icon name="meteocons:star-fill" />
-      <h1>Here's what our customers have said</h1>
+    <div class="text-6xl inline-block">
+      <h1 class="inline">Here's what our customers have said</h1>
+      <Icon name="meteocons:star-fill" class="inline" />
     </div>
     <div
       class="grid grid-cols-3 grid-rows-1 place-items-center gap-8 max-md:grid-cols-1"
