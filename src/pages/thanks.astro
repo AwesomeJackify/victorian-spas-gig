@@ -1,0 +1,21 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+import thanksImg from "@assets/images/thanks.png";
+---
+
+<Layout title="Thank you for your booking">
+  <section
+    class="flex flex-col md:mt-32 py-16 max-md:gap-8 gap-16 items-center text-center px-4"
+  >
+    <h1 class="text-9xl font-extrabold">Thank you for your booking with us</h1>
+    <h2 class="text-2xl">We will email you a confirmation soon</h2>
+    <Image
+      src={thanksImg}
+      alt="thanks image"
+      class="w-96 aspect-square object-cover rounded-2xl max-md:w-full"
+    />
+    <h2 class="text-4xl">See you soon!</h2>
+  </section>
+</Layout>
