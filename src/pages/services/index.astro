@@ -9,14 +9,14 @@ import config from "@data/config.json";
   <section class="md:mt-32">
     <h1 class="text-8xl font-bold text-center py-16">Our Services</h1>
   </section>
-  <section class="px-2">
+  <section class="px-4">
     <div
       class="grid grid-cols-4 gap-4 max-w-screen-xl mx-auto max-md:grid-cols-2 mb-16"
     >
       {
         config.services.map((service) => (
           <a
-            class="transition-all relative flex flex-col px-2 justify-center group py-16 max-md:py-4 cursor-pointer aspect-square h-full w-full"
+            class="transition-all relative flex flex-col px-4 justify-center group py-16 max-md:py-4 cursor-pointer aspect-square h-full w-full"
             href={`/services/${service.name}`}
           >
             <h1 class="text-4xl max-md:text-2xl font-extrabold z-10 text-center text-accent group-hover:text-white transition md:group-hover:scale-105  duration-300 max-md:text-white">
