@@ -38,8 +38,14 @@ import Footer from "@components/Footer.astro";
   <body>
     <Nav client:only="react" />
     <slot />
+    <chat-widget location-id="i7WtQ1KYxjpSPi317Mq4"> </chat-widget>
     <Footer />
   </body>
+  <script
+    is:inline
+    src="https://widgets.leadconnectorhq.com/loader.js"
+    data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+  ></script>
 </html>
 <style is:global>
   :root {
