@@ -1,9 +1,10 @@
 ---
 interface Props {
   title: string;
+  thankYou?: boolean;
 }
 
-const { title } = Astro.props;
+const { title, thankYou } = Astro.props;
 
 import config from "@data/config.json";
 
@@ -73,6 +74,19 @@ import Footer from "@components/Footer.astro";
       })(window, document, "script", "dataLayer", "GTM-TRP9CMF");
     </script>
     <!-- End Google Tag Manager -->
+
+    {
+      thankYou && (
+        <!-- Event snippet for https://www.victorianspas.com/thanks (1) conversion page -->
+        <script>
+          // @ts-ignore
+          gtag("event", "conversion", {
+            send_to: "AW-11081310587/KcuVCPOA44MZEPvC_aMp",
+          });
+        </script>
+      )
+    }
+    
 
     <title>{title}</title>
   </head>

@@ -5,7 +5,7 @@ import { Image } from "astro:assets";
 import thanksImg from "@assets/images/thanks.png";
 ---
 
-<Layout title="Thank you for your booking">
+<Layout title="Thank you for your booking" thankYou={true}>
   <section
     class="flex flex-col md:mt-32 py-16 max-md:gap-8 gap-16 items-center text-center px-4"
   >
@@ -19,11 +19,3 @@ import thanksImg from "@assets/images/thanks.png";
     <h2 class="text-4xl">See you soon!</h2>
   </section>
 </Layout>
-
-<!-- Event snippet for https://www.victorianspas.com/thanks (1) conversion page -->
-<script>
-  // @ts-ignore
-  gtag("event", "conversion", {
-    send_to: "AW-11081310587/KcuVCPOA44MZEPvC_aMp",
-  });
-</script>
