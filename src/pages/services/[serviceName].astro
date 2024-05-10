@@ -8,7 +8,7 @@ export function getStaticPaths() {
   config.services.forEach((service) => {
     paths.push({
       params: {
-        serviceName: service.name,
+        serviceName: service.name.replaceAll(" ", ""),
       },
     });
   });
@@ -19,7 +19,7 @@ export function getStaticPaths() {
 const { serviceName } = Astro.params;
 
 const serviceData = config.services.find(
-  (service) => service.name === serviceName
+  (service) => service.name.replaceAll(" ", "") === serviceName
 );
 
 if (!serviceData) {
@@ -33,9 +33,13 @@ import Layout from "@layouts/Layout.astro";
 
 <Layout title={serviceName}>
   <section
-    class="md:mt-32 w-full h-96 max-md:h-auto bg-primary flex flex-col items-center justify-center"
+    class="relative md:mt-32 w-full overflow-hidden h-96 max-md:h-auto bg-primary flex flex-col items-center justify-center"
   >
-    <h1 class="text-9xl py-16 font-extrabold text-center">
+    <CloudinaryImage
+      publicId={serviceData.publicId}
+      className="absolute top-0 left-0 w-full h-full opacity-70 scale-105 object-cover blur-sm"
+    />
+    <h1 class="text-9xl py-16 relative z-10 font-extrabold text-center">
       {serviceData.name}
     </h1>
   </section>

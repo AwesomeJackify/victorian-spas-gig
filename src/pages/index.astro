@@ -173,7 +173,7 @@ const staff = [
           <div class="w-60 service font-sans relative group text-center max-md:w-full">
             <a
               class="flex flex-col md:group-hover:scale-125 transition bg-primary h-full rounded-2xl gap-4 p-4 cursor-pointer"
-              href={`/services/${service.name}`}
+              href={`/services/${service.name.replaceAll(" ", "")}`}
             >
               <CloudinaryImage publicId={service.publicId} className="w-full" />
               <hr />

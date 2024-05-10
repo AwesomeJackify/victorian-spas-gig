@@ -17,7 +17,7 @@ import config from "@data/config.json";
         config.services.map((service) => (
           <a
             class="transition-all relative flex flex-col px-4 justify-center group py-16 max-md:py-4 cursor-pointer aspect-square h-full w-full"
-            href={`/services/${service.name}`}
+            href={`/services/${service.name.replaceAll(" ", "")}`}
           >
             <h1 class="text-4xl max-md:text-2xl font-extrabold z-10 text-center text-accent group-hover:text-white transition md:group-hover:scale-105  duration-300 max-md:text-white">
               {service.name}
