@@ -15,11 +15,6 @@
   ],
   "socials": [
     {
-      "name": "email",
-      "icon": "mdi:email",
-      "url": "mailto:info@savantedesign.co.nz"
-    },
-    {
       "name": "phone",
       "icon": "mdi:phone",
       "url": "tel:+6402102353859"
