@@ -32,9 +32,9 @@
   ],
   "services": [
     {
-      "name": "Traditional Balinese Massage",
+      "name": "Balinese De-stress massage",
       "pricing": "60min - $115, 90min - $155, 120min - $210",
-      "description": "Traditional Balinese healing ritual. Relaxes tension areas using long flowing strokes and pressure point therapy.",
+      "description": "Traditional Bali Massage Indulge in relaxation when you experience a Balinese massage using nourishing almond oil enriched with aromatherapy aromatics. Let the expert hands of our therapists transport you to a state of pure bliss with long, soothing thumb strokes and targeted pressure point therapy. Say goodbye to chronic stress as tension is melted away from your upper back area. Treat yourself today and experience the true essence of tranquillity with Balinese De-stress massage.",
       "image": "/src/assets/images/services/Traditional-Balinese-Massage.webp",
       "publicId": "Traditional-Balinese-Massage_ofdcxr"
     },
@@ -46,9 +46,44 @@
       "publicId": "Glowing-Toes_dlaz5b"
     },
     {
-      "name": "Deep Tissue Massage",
+      "name": "Deep Tissue Therapy",
       "pricing": "60min - $115, 90min - $155, 120min - $230",
-      "description": "Experience the healing power of deep tissue massage at our spa. Our skilled therapists use targeted pressure techniques to relieve tension and tightness in your muscles and connective tissues, promoting the healing of injuries, reducing chronic pain, and improving overall mobility. With a combination of firm pressure and slow strokes, our deep tissue massage will help you let go of stress and achieve deep relaxation. Whether you're looking to recover from an injury, manage chronic pain, or simply unwind after a long day, our deep tissue massage will leave you feeling rejuvenated and refreshed. Book your appointment today and discover the benefits of this transformative therapy.",
+      "description": "Deep Tissue Massage Introducing Deep Tissue Therapy - the ultimate solution for chronic tension and muscle aches. Our skilled therapists target deep-seated aches using precise techniques and concentrated pressure, ensuring a truly effective massage experience. Say goodbye to persistent pain as tensions and strains are dissolved from the body.",
+      "image": "/src/assets/images/services/Deep-Tissue-Massage.webp",
+      "publicId": "Deep-Tissue-Massage_wufch1"
+    },
+    {
+      "name": "Power Glow Facial",
+      "pricing": "60min - $120",
+      "description": "Experience the ultimate skincare transformation with Power Glow Facial! Unleash the power of radiance-boosting ingredients like vitamin C and ginseng to revitalize your skin. From deep cleansing to intensive hydration, each step is carefully crafted to reveal a youthful glow that lasts for days. Say farewell to dull skin and hello to a revitalized complexion with Power Glow - your secret weapon for radiant, ageless beauty.",
+      "image": "/src/assets/images/services/Deep-Tissue-Massage.webp",
+      "publicId": "Deep-Tissue-Massage_wufch1"
+    },
+    {
+      "name": "Hydra Plump Facial",
+      "pricing": "60min - $120",
+      "description": "Experience the ultimate hydration transformation with our Deep Hydration Facial. Our luxurious treatment starts with a hyaluronic-rich cleanse, followed by an enzyme exfoliator that works its magic to unveil your skin's natural radiance removing any signs of dullness or dehydration. Then, indulge in a hydra quenching peel-off mask that deeply nourishes and plumps your skin, reducing the appearance of aging. You'll emerge with skin that's not just hydrated but also enriched with the power of hyaluronic acid, leaving you looking and feeling renewed.",
+      "image": "/src/assets/images/services/Deep-Tissue-Massage.webp",
+      "publicId": "Deep-Tissue-Massage_wufch1"
+    },
+    {
+      "name": "Age Defying Facial",
+      "pricing": "60min - $125",
+      "description": "Unveil the fountain of youth with our Age-Defying Facial. Experience a luxurious transformation as our skilled therapists cleanse, tone, and rejuvenate your skin with potent enzyme exfoliation. Feel the years melt away as our anti-gravity facial massage lifts and plumps your skin. Next defy the years with a treatment mask formulated with a cocktail of peptides, hyaluronic acid, and crystal extracts to decrease wrinkles and tighten the skin. To complete this anti-aging facial a treatment serum and moisturizer will leave the years behind and your skin youthful and plump.",
+      "image": "/src/assets/images/services/Deep-Tissue-Massage.webp",
+      "publicId": "Deep-Tissue-Massage_wufch1"
+    },
+    {
+      "name": "Express Body Glow",
+      "pricing": "30min - $70",
+      "description": "Reveal your smoothest, softest skin ever with this body exfoliation complete with a deeply nourishing oil application.",
+      "image": "/src/assets/images/services/Deep-Tissue-Massage.webp",
+      "publicId": "Deep-Tissue-Massage_wufch1"
+    },
+    {
+      "name": "Enlivening Body Scrub",
+      "pricing": "60min - $112",
+      "description": "Green Tea, Honey, and Coconut blended Salt Scrub to revitalize the body combining Dead Sea salt to boost circulation and the scents of Green Tea, Honey, and Coconut to leave you energized and rejuvenated.",
       "image": "/src/assets/images/services/Deep-Tissue-Massage.webp",
       "publicId": "Deep-Tissue-Massage_wufch1"
     },
@@ -60,7 +95,7 @@
       "publicId": "Couple-Massage_qhcjph"
     },
     {
-      "name": "Victorian Bali Spa Facial",
+      "name": "Complete Skin Renewal Facial",
       "pricing": "60min - $120",
       "description": "Experience the ultimate in relaxation and rejuvenation with our Victorian Facial treatment. Our skilled estheticians use premium products one of America's No 1 Brand IMAGE Skincare and gentle techniques to purify and nourish your skin from within. The one-hour facial comprises a deep cleansing, gentle exfoliation, and luxurious massage of the face, neck, and shoulders. We'll then apply a customized mask for maximum hydration and a flourish of botanical-infused moisture. Unlock radiant and youthful skin with our Victorian 1 hour facial treatment and feel refreshed and revitalized afterward.",
       "image": "/src/assets/images/services/Victorian-Bali-Spa-Facial.webp",
@@ -109,14 +144,49 @@
       "publicId": "Mini-Mani-or-Pedi_n8l0n9"
     },
     {
-      "name": "Hot-Stone Massage",
-      "pricing": "60min - $145, 90min - $190",
-      "description": "Heated volcanic stones glide over the body, melting away unwanted tension guiding you to a deep state of relaxation.",
+      "name": "Desert Stone Massage",
+      "pricing": "60min - $120, 90min - $170",
+      "description": "Hot Stone Massage Indulge in the ultimate relaxation experience with a Desert Stone Massage. Our luxurious treatment combines the healing power of warm desert stones, nourishing argan oil, ylang ylang scents, and expert massage techniques to melt away stress and tension. Feel the warmth of the stones as they release muscle knots and improve circulation, leaving you rejuvenated and revitalized.",
       "image": "/src/assets/images/services/Hot-Stone-Massage.webp",
       "publicId": "Hot-Stone-Massage_ctzod3"
     },
     {
-      "name": "Express Facial - Image Skin Care",
+      "name": "Muscle Recovery Massage",
+      "pricing": "60min - $105",
+      "description": "Experience the ultimate rehab session with a restoring treatment using the healing effects of therapeutic massage techniques to increase the range of motion and recover stressed, overworked muscles. Immerse yourself in the calming scents of lavender and bergamot, as they gently warm the body and heal the soul. Our aromatic herbal boluses offer instant relief from chronic aches and pains, transforming your tired muscles into a state of blissful rejuvenation. Give your body the care it deserves with this soul-soothing experience.",
+      "image": "/src/assets/images/services/Hot-Stone-Massage.webp",
+      "publicId": "Hot-Stone-Massage_ctzod3"
+    },
+    {
+      "name": "Just the Two of Us",
+      "pricing": "$330",
+      "description": "Unwind side by side with your loved one or someone special as you embark on a blissful journey of a Balinese massage to melt away tension and revitalize your energy flow. To follow, you have the option to select between a luxurious body polish for silky smooth skin or a refreshing facial for a radiant glow. Treat yourselves to this pampering escape.",
+      "image": "/src/assets/images/services/Hot-Stone-Massage.webp",
+      "publicId": "Hot-Stone-Massage_ctzod3"
+    },
+    {
+      "name": "Bali Escape",
+      "pricing": "$275",
+      "description": "Let go of the hustle and bustle of Auckland life and immerse yourself in a world of relaxation and rejuvenation. Treat yourself to a luxurious journey from head to toe, starting with a sugar glow body exfoliation that dissolves dry skin and nourishes your skin. Next sink into bliss with a muscle-melting Balinese or Deep Tissue massage that will leave you feeling refreshed and renewed. Finally, elevate your experience with a plumping and brightening facial to reveal radiant and glowing skin.",
+      "image": "/src/assets/images/services/Hot-Stone-Massage.webp",
+      "publicId": "Hot-Stone-Massage_ctzod3"
+    },
+    {
+      "name": "Bali's Exclusive Package (for one)",
+      "pricing": "60min - $145, 90min - $190",
+      "description": "Treat yourself to our most indulgent spa package yet, Bali's Exclusive Package. The ultimate in relaxation, this 3-hour spa experience begins with our signature Complete Skin Renewal Facial, re-hydrating & nourishing to restore a youthful appearance to tired skin. From there, you will receive the luxurious and soothing one-hour deep tissue massage. We then invite you to experience our deluxe spa mani OR pedi treatment, where our expert technicians will file, shape, and buff your nails, pushing back cuticles and applying a beautiful polish of your choice. Additionally, we'll pamper your hands and feet with an invigorating sugar scrub and deep moisturizing mask for some serious TLC. Complimentary wine and chocolates included to make your experience even more memorable.",
+      "image": "/src/assets/images/services/Hot-Stone-Massage.webp",
+      "publicId": "Hot-Stone-Massage_ctzod3"
+    },
+    {
+      "name": "Just For Me",
+      "pricing": "$165 - 90min",
+      "description": "Unwind special as you embark on a blissful journey of a Balinese massage to melt away tension and revitalize your energy flow. To follow, you have the option to select between a luxurious body polish for silky smooth skin or a refreshing facial for a radiant glow. Treat yourselves to this pampering escape.",
+      "image": "/src/assets/images/services/Hot-Stone-Massage.webp",
+      "publicId": "Hot-Stone-Massage_ctzod3"
+    },
+    {
+      "name": "Express Glow Facial",
       "pricing": "30min - $70",
       "description": "Unwind with our express facial treatments with America's No 1 Brand IMAGE Skincare, perfect for those with a busy schedule. Our experienced estheticians will gently cleanse and exfoliate your skin, followed by a relaxing massage of the face and neck. We'll then apply a hydrating mask and moisturizer, leaving your skin refreshed and revitalized in just 30 minutes. Whether you're looking to rejuvenate your skin for a special occasion or just need a quick pick-me-up after a long day, our express facial treatment is the perfect solution.",
       "image": "/src/assets/images/services/Express-Facial.webp",
