@@ -67,6 +67,13 @@
       "publicId": "Deep-Tissue-Massage_wufch1"
     },
     {
+      "name": "Full Arm Wax",
+      "pricing": "30min - $55",
+      "description": "Waxing",
+      "image": "/src/assets/images/services/Deep-Tissue-Massage.webp",
+      "publicId": "Deep-Tissue-Massage_wufch1"
+    },
+    {
       "name": "Power Glow Facial",
       "pricing": "60min - $120",
       "description": "Experience the ultimate skincare transformation with Power Glow Facial! Unleash the power of radiance-boosting ingredients like vitamin C and ginseng to revitalize your skin. From deep cleansing to intensive hydration, each step is carefully crafted to reveal a youthful glow that lasts for days. Say farewell to dull skin and hello to a revitalized complexion with Power Glow - your secret weapon for radiant, ageless beauty.",
