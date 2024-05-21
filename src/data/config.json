@@ -53,6 +53,20 @@
       "publicId": "Deep-Tissue-Massage_wufch1"
     },
     {
+      "name": "Slimming Massage",
+      "pricing": "75min - $125",
+      "description": "Deep Tissue Massage Introducing Deep Tissue Therapy - the ultimate solution for chronic tension and muscle aches. Our skilled therapists target deep-seated aches using precise techniques and concentrated pressure, ensuring a truly effective massage experience. Say goodbye to persistent pain as tensions and strains are dissolved from the body.",
+      "image": "/src/assets/images/services/Deep-Tissue-Massage.webp",
+      "publicId": "Deep-Tissue-Massage_wufch1"
+    },
+    {
+      "name": "Slimming Massage",
+      "pricing": "75min - $125",
+      "description": "Deep Tissue Massage Introducing Deep Tissue Therapy - the ultimate solution for chronic tension and muscle aches. Our skilled therapists target deep-seated aches using precise techniques and concentrated pressure, ensuring a truly effective massage experience. Say goodbye to persistent pain as tensions and strains are dissolved from the body.",
+      "image": "/src/assets/images/services/Deep-Tissue-Massage.webp",
+      "publicId": "Deep-Tissue-Massage_wufch1"
+    },
+    {
       "name": "Power Glow Facial",
       "pricing": "60min - $120",
       "description": "Experience the ultimate skincare transformation with Power Glow Facial! Unleash the power of radiance-boosting ingredients like vitamin C and ginseng to revitalize your skin. From deep cleansing to intensive hydration, each step is carefully crafted to reveal a youthful glow that lasts for days. Say farewell to dull skin and hello to a revitalized complexion with Power Glow - your secret weapon for radiant, ageless beauty.",
@@ -200,7 +214,7 @@
       "publicId": "Romantic-Spa-Package_iybugt"
     },
     {
-      "name": "Victoria's Exclusive Package",
+      "name": "Bali's exclusive package",
       "pricing": "180min - $299",
       "description": "Treat yourself to our most indulgent spa package yet, Victoria's Exclusive Package. The ultimate in relaxation, this 3-hour spa experience begins with our signature Victorian Facial, re-hydrating & nourishing to restore a youthful appearance to tired skin. From there, you will receive the luxurious and soothing one-hour deep tissue massage. We then invite you to experience our deluxe spa mani OR pedi treatment, where our expert technicians will file, shape, and buff your nails, pushing back cuticles and applying a beautiful polish of your choice. Additionally, we'll pamper your hands and feet with an invigorating sugar scrub and deep moisturizing mask for some serious TLC. Complimentary wine and chocolates included to make your experience even more memorable.",
       "image": "/src/assets/images/services/Victoria's-Exclusive-Package.webp",
