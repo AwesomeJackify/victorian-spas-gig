@@ -17,7 +17,7 @@
     {
       "name": "phone",
       "icon": "mdi:phone",
-      "url": "tel:+6402102353859"
+      "url": "tel:+6402108985227"
     },
     {
       "name": "instagram",
@@ -48,13 +48,6 @@
     {
       "name": "Deep Tissue Therapy",
       "pricing": "60min - $115, 90min - $155, 120min - $230",
-      "description": "Deep Tissue Massage Introducing Deep Tissue Therapy - the ultimate solution for chronic tension and muscle aches. Our skilled therapists target deep-seated aches using precise techniques and concentrated pressure, ensuring a truly effective massage experience. Say goodbye to persistent pain as tensions and strains are dissolved from the body.",
-      "image": "/src/assets/images/services/Deep-Tissue-Massage.webp",
-      "publicId": "Deep-Tissue-Massage_wufch1"
-    },
-    {
-      "name": "Slimming Massage",
-      "pricing": "75min - $125",
       "description": "Deep Tissue Massage Introducing Deep Tissue Therapy - the ultimate solution for chronic tension and muscle aches. Our skilled therapists target deep-seated aches using precise techniques and concentrated pressure, ensuring a truly effective massage experience. Say goodbye to persistent pain as tensions and strains are dissolved from the body.",
       "image": "/src/assets/images/services/Deep-Tissue-Massage.webp",
       "publicId": "Deep-Tissue-Massage_wufch1"
@@ -106,7 +99,7 @@
       "pricing": "60min - $112",
       "description": "Green Tea, Honey, and Coconut blended Salt Scrub to revitalize the body combining Dead Sea salt to boost circulation and the scents of Green Tea, Honey, and Coconut to leave you energized and rejuvenated.",
       "image": "/src/assets/images/services/Deep-Tissue-Massage.webp",
-      "publicId": "Deep-Tissue-Massage_wufch1"
+      "publicId": "IMG_7583_e1yvup"
     },
     {
       "name": "Couple Massage",
