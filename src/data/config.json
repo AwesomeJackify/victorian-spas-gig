@@ -33,7 +33,7 @@
   "services": [
     {
       "name": "Balinese De-stress massage",
-      "pricing": "60min - $115, 90min - $155, 120min - $210",
+      "pricing": "60min - $115, 90min - $140",
       "description": "Traditional Bali Massage Indulge in relaxation when you experience a Balinese massage using nourishing almond oil enriched with aromatherapy aromatics. Let the expert hands of our therapists transport you to a state of pure bliss with long, soothing thumb strokes and targeted pressure point therapy. Say goodbye to chronic stress as tension is melted away from your upper back area. Treat yourself today and experience the true essence of tranquillity with Balinese De-stress massage.",
       "image": "/src/assets/images/services/Traditional-Balinese-Massage.webp",
       "publicId": "Traditional-Balinese-Massage_ofdcxr"
@@ -54,7 +54,7 @@
     },
     {
       "name": "Slimming Massage",
-      "pricing": "75min - $125",
+      "pricing": "60min - $115, 90min - $140",
       "description": "Deep Tissue Massage Introducing Deep Tissue Therapy - the ultimate solution for chronic tension and muscle aches. Our skilled therapists target deep-seated aches using precise techniques and concentrated pressure, ensuring a truly effective massage experience. Say goodbye to persistent pain as tensions and strains are dissolved from the body.",
       "image": "/src/assets/images/services/Deep-Tissue-Massage.webp",
       "publicId": "IMG_7594_pjegxj"
@@ -103,7 +103,7 @@
     },
     {
       "name": "Couple Massage",
-      "pricing": "60min - $230 for Two, 90min - $310 for Two, 120min - $460 for Two",
+      "pricing": "60min - $210, 90min - $299, 120min - $399",
       "description": "Enhance your spa experience with a significant other. Relax and unwind enjoying your massage side by side.",
       "image": "/src/assets/images/services/Couple-Massage.webp",
       "publicId": "Couple-Massage_qhcjph"
@@ -117,7 +117,7 @@
     },
     {
       "name": "Bali Foot Massage",
-      "pricing": "30min - $60, 60min - $115",
+      "pricing": "60min - $100",
       "description": "Put a Life back in your step with our ultimate treat for feet.",
       "image": "/src/assets/images/services/Bali-Foot-Massage.webp",
       "publicId": "Bali-Foot-Massage_ppfxv9"
@@ -131,21 +131,21 @@
     },
     {
       "name": "Pregnancy Massage",
-      "pricing": "90min - $165, 120min - $225",
+      "pricing": "60min - $115, 90min - $140",
       "description": "Let our highly trained massage therapists guide you to the style of massage that targets and relieves common tension areas that may arise during pregnancy. Relax, unwind and rejuvenate under their care. Only available from 12 - 36 weeks.",
       "image": "/src/assets/images/services/Pregnancy-Massage.webp",
       "publicId": "Pregnancy-Massage_oimp3g"
     },
     {
       "name": "Abhyanga (Ayurvedic Massage)",
-      "pricing": "60min - $135, 75min - $165, 90min - $185",
+      "pricing": "90min - $140",
       "description": "For thousands of years, massage therapy has been used as a powerful tool in the healing process. The simple gesture of touch has the ability to transform both mental and physical conditions, easing pain and restoring balance to the entire body. The primary aim of this massage is to flush out toxins that accumulate in our bodies due to the stress of everyday living, improper diet, and negative emotions, which can drain us both physically and mentally. Your experienced therapist will use warm medicated oil and specific strokes relevant to your body's constitution.\n\nBenefits of Abhyanga:\n- Promotes circulation and stimulates the lymphatic system.\n- Relieves tightness and stiffness in the body, improving circulation.\n- Moves the lymph, aiding in detoxification.\n- Nourishes the whole body and stimulates internal organs.\n- Improves sleep and promotes relaxation.\n- Eliminates impurities from the body.\n- Delays aging, improves complexion and life span.\n- Rejuvenates.",
       "image": "/src/assets/images/services/Abhyanga.webp",
       "publicId": "Abhyanga_xpj8h5"
     },
     {
       "name": "Signature Massage",
-      "pricing": "60min - $115, 90min - $155, 120min - $210",
+      "pricing": "60min - $115, 90min - $140",
       "description": "Using Swedish massage techniques, the Victorian signature massage focuses on holistic relaxation. Long, flowing strokes help relax the body and mind while easing muscle tension and facilitating circulation throughout the body.",
       "image": "/src/assets/images/services/Signature-Massage.webp",
       "publicId": "Signature-Massage_qhiysp"
@@ -159,14 +159,14 @@
     },
     {
       "name": "Desert Stone Massage",
-      "pricing": "60min - $120, 90min - $170",
+      "pricing": "60min - $115, 90min - $140",
       "description": "Hot Stone Massage Indulge in the ultimate relaxation experience with a Desert Stone Massage. Our luxurious treatment combines the healing power of warm desert stones, nourishing argan oil, ylang ylang scents, and expert massage techniques to melt away stress and tension. Feel the warmth of the stones as they release muscle knots and improve circulation, leaving you rejuvenated and revitalized.",
       "image": "/src/assets/images/services/Hot-Stone-Massage.webp",
       "publicId": "Hot-Stone-Massage_ctzod3"
     },
     {
       "name": "Muscle Recovery Massage",
-      "pricing": "60min - $105",
+      "pricing": "60min - $115, 90min - $140",
       "description": "Experience the ultimate rehab session with a restoring treatment using the healing effects of therapeutic massage techniques to increase the range of motion and recover stressed, overworked muscles. Immerse yourself in the calming scents of lavender and bergamot, as they gently warm the body and heal the soul. Our aromatic herbal boluses offer instant relief from chronic aches and pains, transforming your tired muscles into a state of blissful rejuvenation. Give your body the care it deserves with this soul-soothing experience.",
       "image": "/src/assets/images/services/Hot-Stone-Massage.webp",
       "publicId": "Deep-Tissue-Massage_wufch1"
