@@ -173,21 +173,21 @@
     },
     {
       "name": "Just the Two of Us",
-      "pricing": "$330",
+      "pricing": "90min - $330",
       "description": "Unwind side by side with your loved one or someone special as you embark on a blissful journey of a Balinese massage to melt away tension and revitalize your energy flow. To follow, you have the option to select between a luxurious body polish for silky smooth skin or a refreshing facial for a radiant glow. Treat yourselves to this pampering escape.",
       "image": "/src/assets/images/services/Hot-Stone-Massage.webp",
       "publicId": "Couple-Massage_qhcjph"
     },
     {
       "name": "Bali Escape",
-      "pricing": "$275",
+      "pricing": "150min - $275",
       "description": "Let go of the hustle and bustle of Auckland life and immerse yourself in a world of relaxation and rejuvenation. Treat yourself to a luxurious journey from head to toe, starting with a sugar glow body exfoliation that dissolves dry skin and nourishes your skin. Next sink into bliss with a muscle-melting Balinese or Deep Tissue massage that will leave you feeling refreshed and renewed. Finally, elevate your experience with a plumping and brightening facial to reveal radiant and glowing skin.",
       "image": "/src/assets/images/services/Hot-Stone-Massage.webp",
       "publicId": "IMG_7593_lufbgn"
     },
     {
       "name": "Bali's Exclusive Package (for one)",
-      "pricing": "60min - $145, 90min - $190",
+      "pricing": "180min - $310",
       "description": "Treat yourself to our most indulgent spa package yet, Bali's Exclusive Package. The ultimate in relaxation, this 3-hour spa experience begins with our signature Complete Skin Renewal Facial, re-hydrating & nourishing to restore a youthful appearance to tired skin. From there, you will receive the luxurious and soothing one-hour deep tissue massage. We then invite you to experience our deluxe spa mani OR pedi treatment, where our expert technicians will file, shape, and buff your nails, pushing back cuticles and applying a beautiful polish of your choice. Additionally, we'll pamper your hands and feet with an invigorating sugar scrub and deep moisturizing mask for some serious TLC. Complimentary wine and chocolates included to make your experience even more memorable.",
       "image": "/src/assets/images/services/Hot-Stone-Massage.webp",
       "publicId": "Traditional-Balinese-Massage_ofdcxr"
@@ -209,16 +209,9 @@
     {
       "name": "Romantic Spa Package",
       "description": "Escape to a world of romance, relaxation, and luxury with our Romantic Spa Package. Treat yourself and your significant other to an unforgettable spa experience that begins with a private, candlelit couple's massage, with customized pressure and therapeutic techniques tailored to your needs. Savor a glass of champagne as we pamper you with our mini spa mani OR pedi treatments to beautify and revitalize your hands and feet. Finally, indulge in an exclusive Express facial treatment using high-quality, nourishing skincare products that will leave your skin refreshed and glowing. Our Romantic Spa Package is designed to delight the senses and rejuvenate your mind, body, and soul",
-      "pricing": "120min - $450 for Two",
+      "pricing": "120min - $410 for Two",
       "image": "/src/assets/images/services/Romantic-Spa-Package.webp",
       "publicId": "Romantic-Spa-Package_iybugt"
-    },
-    {
-      "name": "Bali's exclusive package",
-      "pricing": "180min - $299",
-      "description": "Treat yourself to our most indulgent spa package yet, Victoria's Exclusive Package. The ultimate in relaxation, this 3-hour spa experience begins with our signature Victorian Facial, re-hydrating & nourishing to restore a youthful appearance to tired skin. From there, you will receive the luxurious and soothing one-hour deep tissue massage. We then invite you to experience our deluxe spa mani OR pedi treatment, where our expert technicians will file, shape, and buff your nails, pushing back cuticles and applying a beautiful polish of your choice. Additionally, we'll pamper your hands and feet with an invigorating sugar scrub and deep moisturizing mask for some serious TLC. Complimentary wine and chocolates included to make your experience even more memorable.",
-      "image": "/src/assets/images/services/Victoria's-Exclusive-Package.webp",
-      "publicId": "Victoria_s-Exclusive-Package_spquhb"
     }
   ],
   "reviews": [
