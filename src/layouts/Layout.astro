@@ -38,6 +38,7 @@ import Footer from "@components/Footer.astro";
     <script
       is:inline
       async
+      type="text/partytown"
       src="https://www.googletagmanager.com/gtag/js?id=AW-11081310587"></script>
     <script>
       // @ts-ignore
@@ -56,7 +57,7 @@ import Footer from "@components/Footer.astro";
     </script>
 
     <!-- Google Tag Manager -->
-    <script>
+    <script type="text/partytown">
       (function (w, d, s, l, i) {
         // @ts-ignore
         w[l] = w[l] || [];
@@ -79,7 +80,7 @@ import Footer from "@components/Footer.astro";
     {
       thankYou && (
         // Event snippet for https://www.victorianspas.com/thanks (1) conversion page
-        <script>
+        <script type="text/partytown">
           // @ts-ignore
           window.dataLayer = window.dataLayer || [];
 
@@ -116,11 +117,13 @@ import Footer from "@components/Footer.astro";
     <!-- End Google Tag Manager (noscript) -->
   </body>
   <script
+    type="text/partytown"
     is:inline
     src="https://widgets.leadconnectorhq.com/loader.js"
     data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
   ></script>
   <script
+    type="text/partytown"
     is:inline
     src="https://static.elfsight.com/platform/platform.js"
     data-use-service-core

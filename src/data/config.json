@@ -61,8 +61,8 @@
     },
     {
       "name": "Wax",
-      "pricing": "30min - $55",
-      "description": "Waxing",
+      "pricing": "Full Arm: 30min - $55, Full Leg: 45min - $65, Bikini Wax: 20min - $40, G-String: 30min - $50, Chest or Back: 30min - $60, Full Chest or Full Back\n (inc Shoulder & Upper Arm): 45min - $80",
+      "description": "",
       "image": "/src/assets/images/services/Deep-Tissue-Massage.webp",
       "publicId": "IMG_7591_juslvn"
     },
