@@ -60,13 +60,6 @@
       "publicId": "IMG_7594_pjegxj"
     },
     {
-      "name": "Wax",
-      "pricing": "Full Arm: 30min - $55, Full Leg: 45min - $65, Bikini Wax: 20min - $40, G-String: 30min - $50, Chest or Back: 30min - $60, Full Chest or Full Back\n (inc Shoulder & Upper Arm): 45min - $80",
-      "description": "",
-      "image": "/src/assets/images/services/Deep-Tissue-Massage.webp",
-      "publicId": "IMG_7591_juslvn"
-    },
-    {
       "name": "Power Glow Facial",
       "pricing": "60min - $120",
       "description": "Experience the ultimate skincare transformation with Power Glow Facial! Unleash the power of radiance-boosting ingredients like vitamin C and ginseng to revitalize your skin. From deep cleansing to intensive hydration, each step is carefully crafted to reveal a youthful glow that lasts for days. Say farewell to dull skin and hello to a revitalized complexion with Power Glow - your secret weapon for radiant, ageless beauty.",
@@ -79,6 +72,13 @@
       "description": "Experience the ultimate hydration transformation with our Deep Hydration Facial. Our luxurious treatment starts with a hyaluronic-rich cleanse, followed by an enzyme exfoliator that works its magic to unveil your skin's natural radiance removing any signs of dullness or dehydration. Then, indulge in a hydra quenching peel-off mask that deeply nourishes and plumps your skin, reducing the appearance of aging. You'll emerge with skin that's not just hydrated but also enriched with the power of hyaluronic acid, leaving you looking and feeling renewed.",
       "image": "/src/assets/images/services/Deep-Tissue-Massage.webp",
       "publicId": "Express-Facial_trtven"
+    },
+    {
+      "name": "Wax",
+      "pricing": "Full Arm: 30min - $55, Full Leg: 45min - $65, Bikini Wax: 20min - $40, G-String: 30min - $50, Chest or Back: 30min - $60, Full Chest or Full Back\n (inc Shoulder & Upper Arm): 45min - $80",
+      "description": "",
+      "image": "/src/assets/images/services/Deep-Tissue-Massage.webp",
+      "publicId": "IMG_7591_juslvn"
     },
     {
       "name": "Age Defying Facial",
