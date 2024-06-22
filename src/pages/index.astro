@@ -18,6 +18,8 @@ import madeImg from "@assets/images/made.jpeg";
 import sriImg from "@assets/images/sri.jpeg";
 import juniImg from "@assets/images/juni.jpeg";
 
+import heroVid from "@assets/videos/massage.mp4";
+
 import location1 from "@assets/images/location1.png";
 import location2 from "@assets/images/location2.png";
 
@@ -63,6 +65,25 @@ const staff = [
   <section
     class="h-[calc(100dvh)] max-md:h-screen w-full overflow-hidden relative"
   >
+    <div
+      class="absolute z-10 bottom-4 max-md:bottom-[15%] max-md:translate-y-1/2 left-1/2 -translate-x-[100%] max-md:-translate-x-0 max-md:left-4 max-md:h-32 h-52"
+    >
+      <Icon
+        name="mdi:play"
+        class="text-4xl text-white rounded-full border-2 absolute bottom-2 left-2"
+      />
+      <video
+        id="heroVideo"
+        autoplay
+        loop
+        muted
+        class="z-10 rounded-2xl w-full h-full aspect-video object-cover object-center hover:cursor-pointer"
+      >
+        <source src={heroVid} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
     <div
       class="absolute top-1/2 left-1/2 flex flex-col justify-center gap-16 -translate-x-1/2 -translate-y-1/2 z-10 w-full max-w-2xl mx-auto px-4 items-center"
     >
@@ -298,6 +319,23 @@ const staff = [
         stagger: 0.3,
         duration: 2,
       });
+    });
+
+    const heroVideo = document.getElementById("heroVideo");
+    if (heroVideo) {
+      heroVideo.addEventListener("click", () => {
+        if (!document.fullscreenElement) {
+          heroVideo.requestFullscreen();
+        }
+      });
+    }
+
+    document.addEventListener("fullscreenchange", () => {
+      if (!document.fullscreenElement) {
+        heroVideo?.classList.add("hover:cursor-pointer");
+      } else {
+        heroVideo?.classList.remove("hover:cursor-pointer");
+      }
     });
   </script>
 </Layout>
