@@ -66,7 +66,7 @@ const staff = [
     class="h-[calc(100dvh)] max-md:h-screen w-full overflow-hidden relative"
   >
     <div
-      class="absolute z-10 bottom-4 max-md:bottom-[15%] max-md:translate-y-1/2 left-1/2 -translate-x-[100%] max-md:-translate-x-0 max-md:left-4 max-md:h-32 h-52"
+      class="absolute z-10 bottom-4 max-md:bottom-[15%] max-md:translate-y-1/2 left-1/2 -translate-x-[100%] max-md:-translate-x-0 max-md:left-4 max-md:h-32 aspect-video h-52 max-md:hidden"
     >
       <Icon
         name="mdi:play"
@@ -77,7 +77,7 @@ const staff = [
         autoplay
         loop
         muted
-        class="z-10 rounded-2xl w-full h-full aspect-video object-cover object-center hover:cursor-pointer"
+        class="z-10 rounded-2xl w-full h-full object-cover object-center hover:cursor-pointer"
       >
         <source src={heroVid} type="video/mp4" />
         Your browser does not support the video tag.
@@ -321,10 +321,11 @@ const staff = [
       });
     });
 
-    const heroVideo = document.getElementById("heroVideo");
+    const heroVideo = document.getElementById("heroVideo") as HTMLVideoElement;
     if (heroVideo) {
       heroVideo.addEventListener("click", () => {
         if (!document.fullscreenElement) {
+          heroVideo.play();
           heroVideo.requestFullscreen();
         }
       });
