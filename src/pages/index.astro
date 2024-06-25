@@ -239,11 +239,6 @@ const staff = [
       <Icon name="meteocons:star-fill" class="inline" />
     </div>
     <div
-      class="elfsight-app-da3c9560-a0be-4fa6-8462-f1899fb383d4"
-      data-elfsight-app-lazy
-    >
-    </div>
-    <!-- <div
       class="grid grid-cols-3 grid-rows-1 place-items-center gap-8 max-md:grid-cols-1"
     >
       {
@@ -254,89 +249,89 @@ const staff = [
           </div>
         ))
       }
-    </div> -->
+    </div>
   </section>
+</Layout>
 
-  <script>
-    import { gsap } from "gsap";
-    import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-    import { ScrollTrigger } from "gsap/ScrollTrigger";
+<script>
+  import { gsap } from "gsap";
+  import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-    import Lenis from "@studio-freight/lenis";
+  import Lenis from "@studio-freight/lenis";
 
-    gsap.registerPlugin(MotionPathPlugin);
-    gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(MotionPathPlugin);
+  gsap.registerPlugin(ScrollTrigger);
 
-    const lenis = new Lenis();
+  const lenis = new Lenis();
 
-    lenis.on("scroll", (e: any) => {});
+  lenis.on("scroll", (e: any) => {});
 
-    lenis.on("scroll", ScrollTrigger.update);
+  lenis.on("scroll", ScrollTrigger.update);
 
-    gsap.ticker.add((time) => {
-      lenis.raf(time * 1000);
-    });
+  gsap.ticker.add((time) => {
+    lenis.raf(time * 1000);
+  });
 
-    gsap.ticker.lagSmoothing(0);
+  gsap.ticker.lagSmoothing(0);
 
-    const heroTimeline = gsap.timeline();
-    heroTimeline.from("#heroBG", {
-      height: 0,
-      opacity: 0,
-      duration: 1,
-      ease: "power1.inOut",
-    });
+  const heroTimeline = gsap.timeline();
+  heroTimeline.from("#heroBG", {
+    height: 0,
+    opacity: 0,
+    duration: 1,
+    ease: "power1.inOut",
+  });
 
-    const introTimeline = gsap.timeline({
+  const introTimeline = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#introText",
+      start: "top center",
+      end: "bottom center",
+    },
+  });
+
+  introTimeline.from(".introImg", {
+    y: 100,
+    opacity: 0,
+    stagger: 0.1,
+  });
+
+  let mm = gsap.matchMedia();
+  mm.add("(min-width: 768px)", () => {
+    gsap.to(".service", {
       scrollTrigger: {
-        trigger: "#introText",
-        start: "top center",
+        trigger: "#services",
+        start: "center center",
         end: "bottom center",
+        pin: true,
+        scrub: true,
       },
+      motionPath: {
+        path: "#path",
+        align: "#path",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5],
+      },
+      stagger: 0.3,
+      duration: 2,
     });
+  });
 
-    introTimeline.from(".introImg", {
-      y: 100,
-      opacity: 0,
-      stagger: 0.1,
-    });
-
-    let mm = gsap.matchMedia();
-    mm.add("(min-width: 768px)", () => {
-      gsap.to(".service", {
-        scrollTrigger: {
-          trigger: "#services",
-          start: "center center",
-          end: "bottom center",
-          pin: true,
-          scrub: true,
-        },
-        motionPath: {
-          path: "#path",
-          align: "#path",
-          autoRotate: true,
-          alignOrigin: [0.5, 0.5],
-        },
-        stagger: 0.3,
-        duration: 2,
-      });
-    });
-
-    const heroVideo = document.getElementById("heroVideo") as HTMLVideoElement;
-    if (heroVideo) {
-      heroVideo.addEventListener("click", () => {
-        if (!document.fullscreenElement) {
-          heroVideo.requestFullscreen();
-        }
-      });
-    }
-
-    document.addEventListener("fullscreenchange", () => {
+  const heroVideo = document.getElementById("heroVideo") as HTMLVideoElement;
+  if (heroVideo) {
+    heroVideo.addEventListener("click", () => {
       if (!document.fullscreenElement) {
-        heroVideo?.classList.add("hover:cursor-pointer");
-      } else {
-        heroVideo?.classList.remove("hover:cursor-pointer");
+        heroVideo.requestFullscreen();
       }
     });
-  </script>
-</Layout>
+  }
+
+  document.addEventListener("fullscreenchange", () => {
+    if (!document.fullscreenElement) {
+      heroVideo?.classList.add("hover:cursor-pointer");
+    } else {
+      heroVideo?.classList.remove("hover:cursor-pointer");
+    }
+  });
+</script>
